@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Stug Event Listener",
+    "version": "1.0",
+    "host_permissions": [
+        "https://stug.io/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://stug.io/*"],
+            "js": ["main.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
