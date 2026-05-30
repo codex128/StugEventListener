@@ -57,7 +57,7 @@ console.log("hello from event listener!");
 injectScript(`(${eventCapture.toString()})();`);
 
 const actions = {
-    "out_42[\"fire\"]": function() {
+    "out_fire": function() {
         console.log("FIRE!!!");
     },
     "etc...": function() {
